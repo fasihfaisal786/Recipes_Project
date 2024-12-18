@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desserts - Homie Recipes</title>
+    <link rel="stylesheet" href="Styles.css">
+    <style>
+        /* Dessert Section */
+.dessert-section {
+    padding: 50px 20px;
+    background-color: #fff6f9;
+    color: #333;
+    text-align: center;
+}
+
+.dessert-section .container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.dessert-section h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #e04f5f;
+}
+
+.dessert-section p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.recipes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.recipe-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 60%;
+    border-radius: 8px;
+}
+
+.recipe-card h2 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #e04f5f;
+}
+
+.recipe-card p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.recipe-card .btn {
+    background-color: #e04f5f;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.recipe-card .btn:hover {
+    background-color: #c03d4a;
+}
+
+
+/* Footer Section */
+.dessert-footer {
+    background-color: #f9e9ef;
+    color: #333;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.dessert-footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #e04f5f;
+}
+
+.footer-column p,
+.footer-column ul {
+    font-size: 14px;
+    color: #555;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #e04f5f;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="Index.html" class="logo">HOMIE RECIPES</a>
+                <ul class="nav-links">
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Desert.html" class="active">Dessert</a></li>
+                    <li><a href="Appetizer.html">Appetizer</a></li>
+                    <li><a href="Pasta.html">Pasta</a></li>
+                    <li><a href="Salad.html">Salad</a></li>
+                    <li><a href="Burger.html">Burger</a></li>
+        
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="dessert-section">
+        <div class="container">
+            <h1>Dessert Recipes</h1>
+            <p>
+                Sweeten your day with these delicious dessert recipes! Whether you’re craving cakes, cookies, 
+                or creamy desserts, we’ve got you covered.
+            </p>
+
+            <div class="recipes">
+                <!-- Recipe 1 -->
+                <div class="recipe-card">
+                    <h2>Chocolate Lava Cake</h2>
+                    <img src="../Img/Chocolate-Fondant-lava-Cake.png" alt="Chocolate Lava Cake">
+                    <p>A rich and gooey chocolate dessert perfect for any occasion.</p>
+                    <a href="Lava-Cake-Recipe.html" class="btn">Get Recipe</a>
+                </div>
+
+                <!-- Recipe 2 -->
+                <div class="recipe-card">
+                    <h2>Classic Tiramisu</h2>
+                    <img src="../Img/Classic-Tiramisu-Dessert-Cake-.png"  alt="Tiramisu">
+                    <p>A traditional Italian dessert made with coffee and mascarpone.</p>
+                    <a href="Classic-Tiramisu-Recipe.html" class="btn">Get Recipe</a>
+                </div>
+
+                <!-- Recipe 3 -->
+                <div class="recipe-card">
+                    <h2>Berry Cheesecake</h2>
+                    <img src="../Img/Blueberry-Cheese-Cake-Fresh.png" alt="Berry Cheesecake">
+                    <p>A creamy cheesecake topped with fresh berries.</p>
+                    <a href="Berry-Cheese-Cake.html" class="btn">Get Recipe</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="dessert-footer">
+        <div class="container">
+            <div class="footer-columns">
+                <!-- About Section -->
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>Homie Recipes brings you the best homemade dessert ideas to satisfy your sweet tooth!</p>
+                </div>
+    
+                <!-- Quick Links -->
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="Index.html">Home</a></li>
+                        <li><a href="About.html">About Us</a></li>
+                        <li><a href="Dessert.html">Desserts</a></li>
+                
+                    </ul>
+                </div>
+    
+                <!-- Contact Info -->
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <p>Email: info@homierecipes.com</p>
+                    <p>Phone: +123-456-7890</p>
+                    <p>Follow us on:</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><img src="../Img/Facebook.png" alt="Facebook"></a>
+                        <a href="https://www.twitter.com/"><img src="../Img/Twitter.png" alt="Twitter"></a>
+                        <a href="https://www.instagram.com/"><img src="../Img/Instagram-.png" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+            <p class="footer-copyright">© 2024 Homie Recipes. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

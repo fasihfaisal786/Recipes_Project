@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        .container1 {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #e74c3c;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+
+        /* Hero section */
+        .hero1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 50px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .hero1 img {
+            width: 80%;
+            max-width: 500px;
+            border-radius: 20px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+
+        .hero1 h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .hero1 p {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            line-height: 1.8;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Section for ingredients and instructions */
+        .section-title {
+            font-size: 2rem;
+            color: #e74c3c;
+            margin-bottom: 20px;
+            position: relative;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            background-color: #e74c3c;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .ingredients,
+        .instructions {
+            margin-bottom: 40px;
+        }
+
+        .ingredients ul,
+        .instructions ol {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #333;
+            padding-left: 20px;
+        }
+
+        .ingredients li,
+        .instructions li {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #ecf0f1;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        .ingredients li:hover,
+        .instructions li:hover {
+            background-color: #f39c12;
+            color: #fff;
+        }
+
+        /* Note section */
+        .note {
+            background-color: #f7c4c4;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #c0392b;
+            margin-top: 30px;
+        }
+
+        /* Button styles */
+        .cta-btn {
+            display: inline-block;
+            background-color: #e74c3c;
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 30px;
+            font-size: 1.5rem;
+            border-radius: 30px;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .cta-btn:hover {
+            background-color: #c0392b;
+        }
+
+        .cta-btn:focus {
+            outline: none;
+        }
+
+
+        .burger-footer {
+            background-color: #f4f7f6;
+            color: #333;
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .burger-footer .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-columns {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-column {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .footer-column h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: gray;
+        }
+
+        .footer-column p,
+        .footer-column ul {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 5px;
+        }
+
+        .footer-column ul li a {
+            text-decoration: none;
+            color: gray;
+        }
+
+        .footer-column ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons a {
+            margin: 0 5px;
+            display: inline-block;
+        }
+
+        .social-icons img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .footer-copyright {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="Index.html" class="logo">HOMIE RECIPES</a>
+                <ul class="nav-links">
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Desert.html" class="active">Dessert</a></li>
+                    <li><a href="Appetizer.html">Appetizer</a></li>
+                    <li><a href="Pasta.html">Pasta</a></li>
+                    <li><a href="Salad.html">Salad</a></li>
+                    <li><a href="Burger.html">Burger</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container1">
+        <h1>Classic Burger Recipe</h1>
+
+        <!-- Hero Section -->
+        <div class="hero1">
+            <img src="../Img/Burger.png" alt="Delicious Burger">
+            <h2>Juicy & Flavorful Burger</h2>
+            <p>Our classic burger recipe is everything you want in a burger—juicy, flavorful, and easy to make. Perfect
+                for any occasion, customize it with your favorite toppings for the ultimate burger experience!</p>
+        </div>
+
+        <!-- Ingredients Section -->
+        <div class="ingredients">
+            <div class="section-title">Ingredients:</div>
+            <ul>
+                <li>1 lb ground beef (80% lean, 20% fat)</li>
+                <li>4 hamburger buns</li>
+                <li>1/2 cup shredded cheddar cheese</li>
+                <li>1 small onion, sliced</li>
+                <li>1 tomato, sliced</li>
+                <li>1 tablespoon olive oil</li>
+                <li>Salt and pepper to taste</li>
+                <li>1 tablespoon mustard (optional)</li>
+                <li>1 tablespoon ketchup (optional)</li>
+                <li>Fresh lettuce leaves</li>
+            </ul>
+        </div>
+
+        <!-- Instructions Section -->
+        <div class="instructions">
+            <div class="section-title">Instructions:</div>
+            <ol>
+                <li>Preheat your grill or skillet to medium-high heat.</li>
+                <li>Form the ground beef into 4 patties, about 3/4 inch thick. Season both sides with salt and pepper.
+                </li>
+                <li>Cook the patties for 4-5 minutes on each side or until they reach your desired level of doneness.
+                    Place a slice of cheddar cheese on each patty during the last minute of cooking to melt.</li>
+                <li>While the burgers cook, toast the buns in a separate skillet or on the grill until golden brown,
+                    about 2 minutes.</li>
+                <li>Assemble the burger: Place a lettuce leaf on the bottom half of each bun, then add the cooked patty
+                    with melted cheese, followed by tomato, onion slices, and optional condiments like mustard and
+                    ketchup.</li>
+                <li>Top with the other half of the bun and serve immediately. Enjoy your juicy, flavorful homemade
+                    burger!</li>
+            </ol>
+        </div>
+
+        <!-- Note Section -->
+        <div class="note">
+            Customize your burger with pickles, bacon, or any other toppings you love!
+        </div>
+
+        <!-- Call-to-Action Button -->
+        <a href="#" class="cta-btn">Make Your Burger Now!</a>
+    </div>
+
+
+    <footer class="burger-footer">
+        <div class="container">
+            <div class="footer-columns">
+                <!-- About Section -->
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>Homie Recipes brings you the best homemade dessert ideas to satisfy your sweet tooth!</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="Index.html">Home</a></li>
+                        <li><a href="About.html">About Us</a></li>
+                        <li><a href="Dessert.html">Desserts</a></li>
+
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <p>Email: info@homierecipes.com</p>
+                    <p>Phone: +123-456-7890</p>
+                    <p>Follow us on:</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><img src="../Img/Facebook.png" alt="Facebook"></a>
+                        <a href="https://www.twitter.com/"><img src="../Img/Twitter.png" alt="Twitter"></a>
+                        <a href="https://www.instagram.com/"><img src="../Img/Instagram-.png" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+            <p class="footer-copyright">© 2024 Homie Recipes. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>

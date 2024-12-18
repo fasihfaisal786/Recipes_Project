@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desserts - Homie Recipes</title>
+    <link rel="stylesheet" href="Styles.css">
+    <style>
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fef7f1;
+            color: #444;
+        }
+        .container2 {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        .recipe {
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid #ff7f50;
+            border-radius: 15px;
+            background: #fffaf0;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .recipe h2 {
+            font-size: 1.8em;
+            color: #ff4500;
+            margin-bottom: 15px;
+        }
+
+        .recipe p {
+            line-height: 1.8;
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+        .con {
+            background: linear-gradient(135deg, #ff7f50, #ff4500);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .con h1 {
+            font-size: 3em;
+            margin: 0;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            color: #ff4500;
+        }
+        .appetizer-footer {
+            /* background-color: #f9f9f9; */
+            color: #333;
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .appetizer-footer .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-columns {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-column {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .footer-column h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: gray;
+        }
+
+        .footer-column p,
+        .footer-column ul {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 5px;
+        }
+
+        .footer-column ul li a {
+            text-decoration: none;
+            color: gray;
+        }
+
+        .footer-column ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons a {
+            margin: 0 5px;
+            display: inline-block;
+        }
+
+        .social-icons img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .footer-copyright {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="Index.html" class="logo">HOMIE RECIPES</a>
+                <ul class="nav-links">
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Desert.html" class="active">Dessert</a></li>
+                    <li><a href="Appetizer.html">Appetizer</a></li>
+                    <li><a href="Pasta.html">Pasta</a></li>
+                    <li><a href="Salad.html">Salad</a></li>
+                    <li><a href="Burger.html">Burger</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- <div class="con">
+        <h1>Appetizer Recipes</h1>
+
+    </div> -->
+
+   
+
+    <div class="container2">
+        <section class="recipe">
+            <h2>Bruschetta</h2>
+            <p><strong>Ingredients:</strong> Fresh tomatoes, basil, garlic, olive oil, and baguette slices.</p>
+            <p><strong>Instructions:</strong> Dice the tomatoes, chop the basil, and mince the garlic. Mix them together
+                with olive oil and a pinch of salt. Toast the baguette slices and top with the tomato mixture. Serve
+                immediately.</p>
+        </section>
+
+        <section class="recipe">
+            <h2>Stuffed Mushrooms</h2>
+            <p><strong>Ingredients:</strong> Button mushrooms, cream cheese, breadcrumbs, Parmesan cheese, and herbs.
+            </p>
+            <p><strong>Instructions:</strong> Remove the stems from the mushrooms and fill the caps with a mixture of
+                cream cheese, breadcrumbs, Parmesan, and herbs. Bake at 375°F (190°C) for 20 minutes or until golden
+                brown.</p>
+        </section>
+
+        <section class="recipe">
+            <h2>Caprese Skewers</h2>
+            <p><strong>Ingredients:</strong> Cherry tomatoes, fresh mozzarella balls, fresh basil, and balsamic glaze.
+            </p>
+            <p><strong>Instructions:</strong> Thread cherry tomatoes, mozzarella, and basil leaves onto skewers. Drizzle
+                with balsamic glaze before serving.</p>
+        </section>
+    </div>
+
+   
+    <footer class="appetizer-footer">
+        <div class="container">
+            <div class="footer-columns">
+                <!-- About Section -->
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>Homie Recipes brings you the best homemade dessert ideas to satisfy your sweet tooth!</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="Index.html">Home</a></li>
+                        <li><a href="About.html">About Us</a></li>
+                        <li><a href="Dessert.html">Desserts</a></li>
+
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <p>Email: info@homierecipes.com</p>
+                    <p>Phone: +123-456-7890</p>
+                    <p>Follow us on:</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><img src="../Img/Facebook.png" alt="Facebook"></a>
+                        <a href="https://www.twitter.com/"><img src="../Img/Twitter.png" alt="Twitter"></a>
+                        <a href="https://www.instagram.com/"><img src="../Img/Instagram-.png" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+            <p class="footer-copyright">© 2024 Homie Recipes. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
